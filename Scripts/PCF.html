@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice 4: La Finale exercice</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../pictures/books.ico"/>
+        <link rel="stylesheet" type="text/css" href="../Style/style.css">
+        <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Style/validerButton.css">
+    </head>
+    <body>
+        <script src="/Scripts/controlv2.js"></script>
+        <section class="Navbar">
+			<nav class="MainNav">
+				<ul class="NavUl1">
+					<li class="NavLi1"><a href="../index.html">Page d'accueil</a></li>
+					<li class="Li NavLi1"><div class="dropdown">
+						<script src="Dropdown.js"></script>
+						<button onclick="myFunction()" class="dropbtn">Exercices</button>
+						<div id="myDropdown" class="dropdown-content">
+						  <a href="PR.html">Pass&eacute; R&eacute;cent</a>
+						  <a href="PCA.html">Pass&eacute; Compos&eacute; avec avoir</a>
+						  <a href="PCE.html">Pass&eacute; Compos&eacute; avec &ecirc;tre</a>
+                          <a href="PCF.html">Pass&eacute; Compos&eacute;: finale test</a>
+						</div>
+					  </div></li>
+                    <li class="Li NavLi1"><a href="mailto:deloofemile@gmail.com">Contacter</a></li>
+				</ul>
+			</nav>
+		</section>
+        <section class="Uitleg">
+            <div class="container">
+                <p> 
+                    Welkom bij de laatste oefening! Je bent nu bijna klaar om naar de Pass&eacute; Compos&eacute; te gaan! 
+                    In deze reeks zal je de pass&eacute; compos&eacute; met &ecirc;tre en avoir door elkaar beoefenen. Als je vergeten bent hoe deze vormen werken kan je altijd terug kijken naar de vorige oefeningen en daar de uitleg terug bekijken.
+                </p>
+            </div>
+        </section>
+        <section class="oefeningen">
+            <div class="container">
+                <p class="Opdracht">Vul in met de juiste vormen.</p>
+                <p>1. Est-ce que vous <input type="text" name="PCF1" placeholder="aller" id="PCF1" class="inputs"> au restaurant? <m id="correctPCF1" class="Correct"></m></p>
+                <p>2. Michel <input type="text" name="PCF2" placeholder="finir" id="PCF2" class="inputs"> son dessert. <m id="correctPCF2" class="Correct"></m></p>  
+                <p>3. Fran&ccedil;ois <input type="text" name="PCF3" placeholder="se lever" id="PCF3" class="inputs"> &agrave; 8 heures. <m id="correctPCF3" class="Correct"></m></p>
+                <p>4. Julliette <input type="text" name="PCF4" placeholder="regarder" id="PCF4" class="inputs"> un film. <m id="correctPCF4" class="Correct"></m></p>
+                <p>5. Elle <input type="text" name="PCF5" placeholder="manger" id="PCF5" class="inputs"> un g&acirc;teau. <m id="correctPCF5" class="Correct"></m></p>
+                <p>6. Ils <input type="text" name="PCF6" placeholder="&eacute;crire" id="PCF6" class="inputs"> un livre. <m id="correctPCF6" class="Correct"></m></p>
+                <p>7. L&eacute;a et Sarah <input type="text" name="PCF7" placeholder="partir" id="PCF7" class="inputs"> hier. <m id="correctPCF7" class="Correct"></m></p>
+                <p>8. J'<input type="text" name="PCF8" placeholder="fermer" id="PCF8" class="inputs"> la fen&ecirc;tre. <m id="correctPCF8" class="Correct"></m></p>
+                <p>9. Est-ce que vous <input type="text" name="PCF9" placeholder="recevoir" id="PCF9" class="inputs"> un paquet? <m id="correctPCF9" class="Correct"></m></p>
+                <p>10. Est-ce qu'elle <input type="text" name="PCF10" placeholder="prendre" id="PCF10" class="inputs"> le t&eacute;l&eacute;phone? <m id="correctPCF10" class="Correct"></m></p>
+            </div>
+        </section>
+        <section class="ValiderButtonSec">
+            <script src="control.js" charset="UTF-8"></script>
+            <div id="ValiderButtonDiv">
+                <button class="effect1" onclick="controlPCF()" class="ValiderButton">
+                    Valider
+                    <span class="bg"></span>
+                </button>
+            </div>
+        </section>
+        <section class="oefeningen">
+            <div class="container">
+                <div class="oefeningenDiv">
+                    <p class="Opdracht">Kruis de zinnen die juist vervoegd zijn aan.</p>
+                    <label><p class="oefeningP">1. <input type="checkbox" class="Checkboxes" id="CPCF1"> Mon fr&egrave;re est all&eacute; chez le denstiste.</label> <m id="correctCPCF1"></m><br></p>
+                    <label><p class="oefeningP">2. <input type="checkbox" class="Checkboxes" id="CPCF2"> J'ai oublier mon parapluie dans le taxi ce matin.</label> <m id="correctCPCF2"></m><br></p>
+                    <label><p class="oefeningP">3. <input type="checkbox" class="Checkboxes" id="CPCF3"> La neige a fondu tr&egrave;s vite, c'est dommage.</label> <m id="correctCPCF3"></m><br></p>
+                    <label><p class="oefeningP">4. <input type="checkbox" class="Checkboxes" id="CPCF4"> Tu as sais me rendre <abbr title="Hoop" class="PCABBR">l'espoir</abbr> quand j'en avais besoin, je te remercie.</label> <m id="correctCPCF4"></m><br></p>
+                    <label><p class="oefeningP">5. <input type="checkbox" class="Checkboxes" id="CPCF5"> Paul et moi sont arriv&eacute;s avec une hearde de retard au rendez-vous.</label> <m id="correctCPCF5"></m><br></p>
+                </div>
+            </div>  
+        </section>
+        <section class="ValiderSec">
+            <script src="control.js" charset="UTF-8"></script>
+            <div id="ValiderButtonDiv">
+                <button class="effect1" onclick="controlCPCF()" class="ValiderButton">
+                    Valider
+                    <span class="bg"></span>
+                </button>
+            </div>
+            <div style="margin-bottom: 15px;"></div>
+        </section>
+        <section class="oefeningen">
+            <div class="container">
+                <div class="oefeningenDiv">
+                    <p class="Opdracht">Selecteer de juiste vorm.</p>
+                    <p>1. Elle <select id="UiDropdown1" class="UiDropdown">
+                        <option value="1">a mang&eacute;</option>
+                        <option value="2">a mang&eacute;e</option>
+                    </select> un g&acirc;teau. <m id="correctSPCF1" class="correct"></m></p>
+                    <p>2. Nous <select id="UiDropdown2" class="UiDropdown">
+                        <option value="1">sommes partis</option>
+                        <option value="2">avons parti</option>
+                    </select> en vacances. <m id="correctSPCF2" class="correct"></m></p>
+                    <p>3. Est-ce que vous <select id="UiDropdown3" class="UiDropdown">
+                        <option value="1">&ecirc;tes re&ccedil;u</option>
+                        <option value="2">avez re&ccedil;u</option>
+                    </select> au restaurant? <m id="correctSPCF3" class="correct"></m></p>
+                    <p>4. Ils <select id="UiDropdown4" class="UiDropdown">
+                        <option value="1">ont &eacute;crir&eacute;</option>
+                        <option value="2">ont &eacute;crit</option>
+                    </select> trop de wodka. <m id="correctSPCF4" class="correct"></m></p>
+                    <p>5. Ma m&egrave;re et mon p&egrave;re <select id="UiDropdown5" class="UiDropdown">
+                        <option value="1">sont venus</option>
+                        <option value="2">ont venus</option>
+                    </select> &agrave; la f&ecirc;te de l'&eacute;cole. <m id="correctSPCF5" class="correct"></m></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <script src="control.js" charset="UTF-8"></script>
+                <div id="ValiderButtonDiv">
+                    <button class="effect1" onclick="controlSPCF()" class="ValiderButton">
+                        Valider
+                        <span class="bg"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <div class="ToTop">
+			<a href="#">Naar boven</a>
+		</div>
+        <footer>
+            <section class="footer">
+                <div class="container">
+                    <a href="https://emile-deloof.github.io/" style="text-decoration: underline;">A website by Emile Deloof</a>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

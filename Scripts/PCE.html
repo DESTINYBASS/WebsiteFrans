@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Exercice 3: Le PC avec être</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../pictures/books.ico"/>
+        <link rel="stylesheet" type="text/css" href="../Style/style.css">
+        <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Style/validerButton.css">
+    </head>
+    <body>
+        <script src="/Scripts/controlv2.js"></script>
+        <section class="Navbar">
+			<nav class="MainNav">
+				<ul class="NavUl1">
+					<li class="NavLi1"><a href="../index.html">Page d'accueil</a></li>
+					<li class="Li NavLi1"><div class="dropdown">
+						<script src="Dropdown.js"></script>
+						<button onclick="myFunction()" class="dropbtn">Exercices</button>
+						<div id="myDropdown" class="dropdown-content">
+						  <a href="PR.html">Pass&eacute; R&eacute;cent</a>
+						  <a href="PCA.html">Pass&eacute; Compos&eacute; avec avoir</a>
+						  <a href="PCE.html">Pass&eacute; Compos&eacute; avec &ecirc;tre</a>
+                          <a href="PCF.html">Pass&eacute; Compos&eacute;: finale test</a>
+						</div>
+					  </div></li>
+                    <li class="Li NavLi1"><a href="mailto:deloofemile@gmail.com">Contacter</a></li>
+				</ul>
+			</nav>
+		</section>
+        <section class="Uitleg">
+            <div class="container">
+                <p>
+                    Welkom bij de derde en voorlaatste oefening! Nu je de Pass&eacute; compos&eacute; met avoir onder de knie hebt
+                    kun je aan de slag me de pass&eacute; compos&eacute; met &ecirc;tre. Het is wel verschillend maar je moet geen schrik hebben
+                    alles wordt goed uitgelegd en als je het nog niet snapt kun je nog uitleg vragen aan de leerkracht.
+                    Ik heb een filmpje voor jullie waar het uitgelegd wordt dus let maar goed op zodat je het snel snapt.
+                </p>
+            </div>
+        </section>
+        <section class="Herhaling">
+            <div class="container">
+                <iframe class="video" src="https://www.youtube.com/embed/ZH8ko8oGsL4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="Uitleg2">
+            <div class="container">
+                <p>
+                    Nu je het filmpje bekeken hebt heb ik nog een klein trucje om alle werkwoorden te onthouden die met 
+                    &ecirc;tre vervoegd worden.
+                    <br>
+                    <p id="trucje">Het trucje werkt als volgt: </p>
+                    Al de werkwoorden die je op deze tekening ziet staan zijn de werkwoorden die je vervoegt met &ecirc;tre. Het is zeer belangrijk dat je al deze werkwoorden uit het
+                    hoofd leert want dit is heel belangrijk in het Frans.
+                </p>
+            </div>
+        </section>
+        <section class="Herhaling">
+            <div class="container">
+                <img src="../pictures/PCE.PNG">
+            </div>
+        </section>
+        <section class="inleiding">
+            <div class="container">
+                <div class="Uitleg2">
+                    <p>Vul het schema in.</p>
+                </div>  
+                <div class="grid">
+                    <label class="GridLabel GridOpgave" >Je/J'</label>
+                    <label class="GridLabel"><input type="text" class="inputs2" id="IPCE1" placeholder="partir"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Tu</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPCE2" placeholder="tomber"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Il/Elle/On</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPCE3" placeholder="sortir"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Nous</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPCE4" placeholder="passer"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Vous</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPCE5" placeholder="venir"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Ils/Elles</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPCE6" placeholder="tourner"></label>
+                </div>
+            </div>
+        </section>
+        <section class="ValiderSec">
+            <script src="control.js" charset="UTF-8"></script>
+            <div id="ValiderButtonDiv">
+                <button class="effect1" onclick="controlIPCE()" class="ValiderButton">
+                    Valider
+                    <span class="bg"></span>
+                </button>
+            </div>
+            <div style="margin-bottom: 50px;"></div>
+        </section>
+        <section class="oefeningen">
+            <div class="container">
+                <div class="oefeningenDiv">
+                    <p class="Opdracht">Vul in met de juiste vorm.</p>
+                    <p>1. Hier, h&eacute;l&egrave;ne et sa m&egrave;re <input type="text" name="PCE1" placeholder="ne pas aller" id="PCE1" class="inputs"> au march&eacute;. <m id="correctPCE1" class="correct"></m></p>
+                    <p>2. La semaine derni&egrave;re, Pierre <input type="text" name="PCE2" placeholder="tomber" id="PCE2" class="inputs"> de son v&eacute;lo. <m id="correctPCE2" class="correct"></m></p>
+                    <p>3. Ils <input type="text" name="PCE3" placeholder="rentrer" id="PCE3" class="inputs"> de vacances hier soir. <m id="correctPCE3" class="correct"></m></p>
+                    <p>4. Mon fr&egrave;re <input type="text" name="PCE4" placeholder="d&eacute;scendre" id="PCE4" class="inputs"> de sa chambre. <m id="correctPCE4" class="correct"></m></p>
+                    <p>5. Je <input type="text" name="PCE5" placeholder="aller" id="PCE5" class="inputs"> au cin&eacute;ma avec mon ami hier soir. <m id="correctPCE5" class="correct"></m></p>
+                    <p>6. Elles <input type="text" name="PCE6" placeholder="partir" id="PCE6" class="inputs"> il y a deux heures. <m id="correctPCE6" class="correct"></m></p>
+                    <p>7. Mon p&egrave;re <input type="text" name="PCE7" placeholder="rentrer" id="PCE7" class="inputs"> de la France samedi matin &agrave; 10h30. <m id="correctPCE7" class="correct"></m></p>
+                    <p>8. Nous <input type="text" name="PCE8" placeholder="venir" id="PCE8" class="inputs"> en train, puis nous avons pris un taxi de la gare. <m id="correctPCE8" class="correct"></m></p>
+                    <p>9. Ma soeur <input type="text" name="PCE9" placeholder="rester" id="PCE9" class="inputs"> au caf&eacute; jusq'&agrave; minuit. <m id="correctPCE9" class="correct"></m></p>
+                    <p>10. Michel et Sabine <input type="text" name="PCE10" placeholder="arriver" id="PCE10" class="inputs"> en retard, en raison de <abbr title="De file" class="PCABBR">l'embouteillage</abbr> sur l'autoroute. <m id="correctPCE10" class="correct"></m></p>
+                </div>
+        </section>
+        <section>
+            <script src="control.js" charset="UTF-8"></script>
+            <div id="ValiderButtonDiv">
+                <button class="effect1" onclick="controlPCE()" class="ValiderButton">
+                    Valider
+                    <span class="bg"></span>
+                </button>
+            </div>
+        </section>
+        <section class="oefeningen">
+            <div class="container">
+                <div class="oefeningenDiv">
+                    <p class="Opdracht">Vertaal en vervoeg de werkwoorden correct.</p>
+                    <p>1. Il <input type="text" name="TPCE1" placeholder="vertrekken" id="TPCE1" class="inputs"> &agrave; 5 heures du matin. <m class="correct" id="correctTPCE1"></m></p>
+                    <p>2. Anne et sa soeur <input type="text" name="TPCE2" placeholder="komen" id="TPCE2" class="inputs"> nous voir mardi dernier. <m class="correct" id="correctTPCE2"></m></p>
+                    <p>3. Mon fr&egrave;re et moi, <input type="text" name="TPCE3" placeholder="aankomen" id="TPCE3" class="inputs"> en retard. <m class="correct" id="correctTPCE3"></m></p>
+                    <p>4. Lucie <input type="text" name="TPCE4" placeholder="vallen" id="TPCE4" class="inputs"> dans les escaliers ce matin. <m class="correct" id="correctTPCE4"></m></p>
+                    <p>5. Ils <input type="text" name="TPCE5" placeholder="terugkeren" id="TPCE5" class="inputs"> hier soir. <m class="correct" id="correctTPCE5"></m></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <script src="control.js" charset="UTF-8"></script>
+            <div id="ValiderButtonDiv">
+                <button class="effect1" onclick="controlTPCE()" class="ValiderButton">
+                    Valider
+                    <span class="bg"></span>
+                </button>
+            </div>
+        </section>
+        <div class="ToTop">
+			<a href="#">Naar boven</a>
+		</div>
+        <footer>
+            <section class="footer">
+                <div class="container">
+                    <a href="https://emile-deloof.github.io/" style="text-decoration: underline;">A website by Emile Deloof</a>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

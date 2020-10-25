@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Exercice 2: Le PC avec avoir</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../pictures/books.ico"/>
+        <link rel="stylesheet" type="text/css" href="../Style/style.css">
+        <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Style/validerButton.css">
+    </head>
+    <body>
+        <script src="/Scripts/controlv2.js"></script>
+        <section class="Navbar">
+			<nav class="MainNav">
+				<ul class="NavUl1">
+					<li><a href="../index.html">Page d'accueil</a></li>
+					<li><div class="dropdown">
+						<script src="Dropdown.js"></script>
+						<button onclick="myFunction()" class="dropbtn">Exercices</button>
+						<div id="myDropdown" class="dropdown-content">
+						  <a href="PR.html">Pass&eacute; R&eacute;cent</a>
+						  <a href="PCA.html">Pass&eacute; Compos&eacute; avec avoir</a>
+						  <a href="PCE.html">Pass&eacute; Compos&eacute; avec &ecirc;tre</a>
+                          <a href="PCF.html">Pass&eacute; Compos&eacute;: finale test</a>
+						</div>
+					  </div></li>
+                    <li><a href="mailto:deloofemile@gmail.com">Contacter</a></li>
+				</ul>
+			</nav>
+		</section>
+        <section class="Uitleg">
+            <div class="container">
+                <p>Welkom bij de tweede oefening! Nu je Le Pass&eacute; R&eacute;cent onder de knie hebt kun je beginnen met de tweede oefening: Le pass&eacute; Compos&eacute; met avoir.
+                Maar voor je aan de oefening kan beginnen stel ik voor dat je eerst deze foto aandachtig bekijkt. Als je denkt dat je het begrijpt kan je 
+                beginnen met de oefeningen, als je iets niet begrijpt kan je uitleg vragen aan de leerkracht.</p>
+            </div>
+        </section>
+        <header class="MainHeader">
+            <div class="container">
+                <img id="PCAPIC" src="https://slideplayer.fr/slide/1306197/3/images/2/Le+pass%C3%A9+compos%C3%A9+des+verbes+%E2%80%93er%2C+-ir%2C+et+%E2%80%93re+%28R%C3%89GULIERS%29.jpg">
+            </div>
+        </header>
+        <section class="inleiding">
+            <div class="container">
+                <div class="Uitleg2">
+                    <p>Vul het schema in.</p>
+                </div>  
+                <div class="grid">
+                    <label class="GridLabel GridOpgave" >Je/J'</label>
+                    <label class="GridLabel"><input type="text" class="inputs2" id="IPCA1" placeholder="boire"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Tu</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPCA2" placeholder="avoir"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Il/Elle/On</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPCA3" placeholder="conna&icirc;tre"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Nous</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPCA4" placeholder="rouler"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Vous</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPCA5" placeholder="tenir"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Ils/Elles</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPCA6" placeholder="parler"></label>
+                </div>
+            </div>
+        </section>
+        <section class="ValiderSec">
+            <script src="control.js" charset="UTF-8"></script>
+            <div id="ValiderButtonDiv">
+                <button class="effect1" onclick="controlIPCA()" class="ValiderButton">
+                    Valider
+                    <span class="bg"></span>
+                </button>
+            </div>
+            <div style="margin-bottom: 50px;"></div>
+        </section>
+        <section class="oefeningen">
+            <div class="container">
+                <div class="oefeningenDiv">
+                    <p class="Opdracht">Vul in met de juiste vorm.</p>
+                    <p>1. J'<input type="text" name="PCA1" placeholder="d&eacute;j&agrave; manger" id="PCA1" class="inputs">. <m id="correctPCA1" class="correct"></m></p>
+                    <p>2. Ces hommes <input type="text" name="PCA2" placeholder="boire" id="PCA2" class="inputs"> trop de wodka. <m id="correctPCA2" class="correct"></m></p>
+                    <p>3. Vous <input type="text" name="PCA3" placeholder="&ecirc;tre" id="PCA3" class="inputs"> au restaurant la semaine pass&eacute;e? <m id="correctPCA3" class="correct"></m></p>
+                    <p>4. Nous <input type="text" name="PCA4" placeholder="recevoir" id="PCA4" class="inputs"> une invitation pour la f&ecirc;te de Th&eacute;o. <m id="correctPCA4" class="correct"></m></p>
+                    <p>5. J'<input type="text" name="PCA5" placeholder="conna&icirc;tre" id="PCA5" class="inputs"> mon arri&egrave;re-grand-p&egrave;re. <m id="correctPCA5" class="correct"></m></p>
+                    <p>6. Tu <input type="text" name="PCA6" placeholder="prendre" id="PCA6" class="inputs"> la voiture pour aller &agrave; l'&eacute;cole? <m id="correctPCA6" class="correct"></m></p>
+                    <p>7. On <input type="text" name="PCA7" placeholder="d&eacute;j&agrave; voir" id="PCA7" class="inputs"> la Tour Eiffel. <m id="correctPCA7" class="correct"></m></p>
+                    <p>8. Tu <input type="text" name="PCA8" placeholder="mettre" id="PCA8" class="inputs"> la table? <m id="correctPCA8" class="correct"></m></p>
+                    <p>9. Nous <input type="text" name="PCA9" placeholder="voir" id="PCA9" class="inputs"> ce film l'ann&eacute;e pass&eacute;e. <m id="correctPCA9" class="correct"></m></p>
+                    <p>10. Ma maman <input type="text" name="PCA10" placeholder="t&eacute;l&eacute;phoner" id="PCA10" class="inputs"> au directeur. <m id="correctPCA10" class="correct"></m></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <script src="control.js" charset="UTF-8"></script>
+                <div id="ValiderButtonDiv">
+                    <button class="effect1" onclick="controlPCA()" class="ValiderButton">
+                        Valider
+                        <span class="bg"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="oefeningen">
+            <div class="container">
+                <div class="oefeningenDiv">
+                    <p class="Opdracht">Selecteer de juiste vorm.</p>
+                    <p>1. J' <select id="UiDropdown1" class="UiDropdown">
+                        <option value="1">ai suis</option>
+                        <option value="2">ai &eacute;t&eacute;</option>
+                    </select> en forme toute la matin&eacute;e. <m id="correctSPCA1" class="correct"></m></p>
+                    <p>2. Elle <select id="UiDropdown2" class="UiDropdown">
+                        <option value="1">a entendu</option>
+                        <option value="2">as entendu</option>
+                    </select> ce bruit. <m id="correctSPCA2" class="correct"></m></p>
+                    <p>3. Nous <select id="UiDropdown3" class="UiDropdown">
+                        <option value="1">avons aimez</option>
+                        <option value="2">avons aim&eacute;</option>
+                    </select> le film de hier. <m id="correctSPCA3" class="correct"></m></p>
+                    <p>4. Le m&eacute;decin me dit que j' <select id="UiDropdown4" class="UiDropdown">
+                        <option value="1">ai grandi</option>
+                        <option value="2">ai grandis</option>
+                    </select> de 2 centim&egrave;tres. <m id="correctSPCA4" class="correct"></m></p>
+                    <p>5. Vous &ecirc;tes pr&ecirc;ts pour votre examen, vous <select id="UiDropdown5" class="UiDropdown">
+                        <option value="1">avez r&eacute;visez</option>
+                        <option value="2">avez r&eacute;vis&eacute;</option>
+                    </select> votre examen. <m id="correctSPCA5" class="correct"></m></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <script src="control.js" charset="UTF-8"></script>
+                <div id="ValiderButtonDiv">
+                    <button class="effect1" onclick="controlSPCA()" class="ValiderButton">
+                        Valider
+                        <span class="bg"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <div class="ToTop">
+			<a href="#">Naar boven</a>
+		</div>
+        <footer>
+            <section class="footer">
+                <div class="container">
+                    <a href="https://emile-deloof.github.io/" style="text-decoration: underline;">A website by Emile Deloof</a>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

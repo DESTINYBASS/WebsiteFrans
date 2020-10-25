@@ -1,0 +1,469 @@
+*{
+    outline: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #2F80ED, #56CCF2);
+    background-repeat: no-repeat;
+    background-color: #56CCF2;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body a{
+    text-decoration: none;
+    color: white;
+}
+
+#Welcome{
+    text-align: justify;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    /*opacity: 0;*/
+    /*animation: welcomelanding 0.5s both;*/
+    position: relative;
+    z-index: 0;
+}
+
+/*@keyframes welcomelanding{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.5;
+    }
+}*/
+
+.NavButtons{
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    padding: 5;
+    background: none;
+    font-size: 18px;
+    border-bottom: 1.5px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+nav button{
+    padding: 0;
+    margin: 0;
+}
+
+#ButtonTab{
+    text-align: center;
+}
+
+.PCABBR{
+    text-decoration: underline;
+}
+
+#ButtonTab ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#ButtonTab li{
+    padding-top: 1em;
+}
+
+#Opmerking{
+    font-size: 13px;
+    text-align: left;
+}
+
+.Uitleg{
+    text-align: justify;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.Herhaling{
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 7%;
+}
+
+.inputs{
+    font-size: 18px;
+    border-radius: 15px;
+    padding-left: 9px;
+    border: 2.5px solid transparent;
+}
+
+.inputs2{
+    font-size: 18px;
+    border-radius: 15px;
+    padding-left: 9px;
+    border: 2.5px solid transparent;
+    width: 80%;
+}
+
+.bottomPadding{
+    padding-bottom: 5em;
+}
+
+#PCAPIC{
+    text-align: center;
+    width: 90%;
+    align-content: center;
+    padding-bottom: 80px;
+}
+
+.MainHeader{
+    text-align: center;
+}
+
+.Uitleg2 {
+    text-align: justify;
+}
+
+footer{
+    text-align: center;
+    font-size: 12px;
+}
+
+#ValiderButtonDiv{
+    text-align: center;
+}
+
+#trucje{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.GridLabel{
+    border: 2px solid white;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.GridOpgave{
+    border-right: none;
+}
+
+.GridOpgave2{
+    border-top: none;
+}
+
+.Uitleg2{
+    text-align: center;
+}
+  
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 20%;
+}
+  
+.closebtn:hover {
+    color: black;
+}
+
+.UiDropdown{
+    border-radius: 7px;
+    font-size: 16px;
+    border: 2px solid transparent;
+}
+
+.UiDropdown option{
+    font-size: 16px;
+}
+
+.MailTo{
+    text-decoration: underline;
+}
+
+footer p{
+    font-size: 10.5px;
+}
+
+.Navbar{
+    background-color: rgb(0, 108, 250);
+    /*opacity: 0;
+    animation: navlanding 1s forwards;*/
+}
+
+/*@keyframes navlanding{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}*/
+
+.MainNav{
+    flex: 1;
+}
+
+.Navbar ul{
+    margin: 0;
+    list-style: none;
+    padding: 15px 0px 15px 15px;
+    text-align: center;
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.Navbar li{
+    font-size: 18px;
+    flex: 1;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: transparent;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    text-align: center;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd}
+  
+.show {display:block;}
+
+.ToTop{
+    top: 400px;
+    position: fixed;
+    padding-left: 7px;
+    background-color: rgb(0, 108, 250);
+    padding-right: 7px;
+    border: 1px solid rgb(0, 108, 250);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 0;
+    box-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+
+.login{
+    background-color: #2F80ED;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    margin-top: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1.5px solid black;
+    border-radius: 15px;
+    display: block;
+    margin-bottom: 5%;
+}
+
+#dashboardSec{
+    display: none;
+}
+
+.EA{
+    font-size: 16px;
+    margin-top: 5%;
+    background-color: #222;
+    color: white;
+    border: 1px solid #222;
+    border-radius: 15px;
+    padding: 5px 7px 5px 7px;
+}
+
+#dashboard{
+    text-align: center;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+#SelectPic{
+    height: auto;
+    width: 70%;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.gridDiv{
+    border: 2px solid white;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.gridButton{
+    border: 2px solid black;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+#whereSec{
+    display: none;
+}
+
+.where{
+    text-align: center;
+}
+
+#retourner{
+    display: none;
+    margin-left: 15%;
+}
+
+#logout{
+    border: 1.5px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 5px 5px 5px;
+    display: none;
+    cursor: pointer;
+    text-align: right;
+}
+
+#logoutA{
+    border: 1.5px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+    font-size: small;
+}
+
+#error{
+    display: none;
+}
+
+#logoutLi{
+    display: inline;
+}
+
+#something{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#backButton{
+    border: 2px solid black;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .ToTop{
+        display: none;
+    }
+    .Navbar ul{
+        width: 100%;
+    }
+}
+
+.video{
+    width: 100%;
+    height: 500px;
+}
+
+#param{
+    font-size: 12px;
+}
+
+.paramButton{
+    background: transparent;
+    border: 2px solid black;
+    font-size: 18px;
+    margin-top: 5px;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    transition: 0.4s all ease;
+}
+
+.paramButton:hover{
+    color: white;
+    background-color: black;
+}
+
+.score{
+    display: none;
+}

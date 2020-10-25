@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice 1: le Pass&eacute; R&eacute;cent</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../pictures/books.ico"/>
+        <link rel="stylesheet" type="text/css" href="../Style/style.css">
+        <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Style/validerButton.css">
+    </head>
+    <body>
+        <script src="/Scripts/controlv2.js"></script>
+        <section class="Navbar">
+			<nav class="MainNav">
+				<ul class="NavUl1">
+					<li class="NavLi1"><a href="../index.html">Page d'accueil</a></li>
+					<li class="Li NavLi1"><div class="dropdown">
+						<script src="Dropdown.js"></script>
+						<button onclick="myFunction()" class="dropbtn">Exercices</button>
+						<div id="myDropdown" class="dropdown-content">
+						    <a href="PR.html">Pass&eacute; R&eacute;cent</a>
+                            <a href="PCA.html">Pass&eacute; Compos&eacute; avec avoir</a>
+                            <a href="PCE.html">Pass&eacute; Compos&eacute; avec &ecirc;tre</a>
+                            <a href="PCF.html">Pass&eacute; Compos&eacute;: finale test</a>
+						</div>
+					</div></li>
+                    <li class="Li NavLi1"><a href="mailto:deloofemile@gmail.com">Contacter</a></li>
+				</ul>
+			</nav>
+		</section>
+        <section class="Uitleg">
+            <div class="container">
+                <p>Welkom bij de eerste oefening! Voor je gaat beginnen met de 
+                    oefeningen zou je misschien beter eerst de video hieronder bekijken om Le Pass&eacute; R&eacute;cent te hernemen en te herhalen als je denkt het te begrijpen kun je beginnen met de oefeningen.
+                </p>
+            </div>
+        </section>
+        <section class="Herhaling">
+            <div class="container">
+                <iframe class="video" src="https://www.youtube.com/embed/i4lpym274kk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </section>
+        <section class="inleiding">
+            <div class="container">
+                <div class="Uitleg2">
+                    <p>Vul het schema in.</p>
+                </div>  
+                <div class="grid" id="IPR">
+                    <label class="GridLabel GridOpgave" >Je/J'</label>
+                    <label class="GridLabel"><input type="text" class="inputs2" id="IPR1" placeholder="partir"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Tu</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR2" placeholder="avoir"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Il/Elle/On</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR3" placeholder="arriver"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Nous</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR4" placeholder="d&eacute;coller"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Vous</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR5" placeholder="tenir"></label>
+                    <label class="GridLabel GridOpgave GridOpgave2">Ils/Elles</label>
+                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR6" placeholder="parler"></label>
+                </div>
+            </div>
+        </section>
+        <section class="ValiderSec">
+            <script src="control.js"></script>
+            <div id="ValiderButtonDiv">
+                <!-- <button class="effect1" onclick="controlIPR()" class="ValiderButton"> -->
+                <button class="effect1" onclick="check()" class="ValiderButton">
+                    Valider
+                    <span class="bg"></span>
+                </button>
+            </div>
+            <div style="margin-bottom: 50px;"></div>
+        </section>
+        <section class="oefeningen">
+            <div class="container">
+                <div class="oefeningenDiv">
+                    <p class="Opdracht">Vul in met de juiste vorm.</p>
+                    <p>1. Je <input type="text" name="PR1" placeholder="manger" id="PR1" class="inputs"> des frites. <m id="correctPR1" class="correct"></m></p>
+                    <p>2. Nous <input type="text" name="PR2" placeholder="prendre" id="PR2" class="inputs"> notre petit d&eacute;jeuner avec nos parents. <m id="correctPR2" class="correct"></m></p>
+                    <p>3. Mes parents <input type="text" name="PR3" placeholder="regarder" id="PR3" class="inputs"> un film ce soir. <m id="correctPR3" class="correct"></m></p>
+                    <p>4. Tu <input type="text" name="PR4" placeholder="entendre" id="PR4" class="inputs"> ce bruit? <m id="correctPR4" class="correct"></m></p>
+                    <p>5. Mon p&egrave;re <input type="text" name="PR5" placeholder="travailler" id="PR5" class="inputs"> de 8 heures &agrave; 18 heures. <m id="correctPR5" class="correct"></m></p>
+                    <p>6. tu <input type="text" name="PR6" placeholder="t&eacute;l&eacute;phoner" id="PR6" class="inputs"> &agrave; ton copain? <m id="correctPR6" class="correct"></m></p>
+                    <p>7. Nous <input type="text" name="PR7" placeholder="aller" id="PR7" class="inputs"> au cin&eacute;ma. <m id="correctPR7" class="correct"></m></p>
+                    <p>8. Ils <input type="text" name="PR8" placeholder="voir" id="PR8" class="inputs"> une Lamborghini. <m id="correctPR8" class="correct"></m></p>
+                    <p>9. Nous <input type="text" name="PR9" placeholder="&eacute;couter" id="PR9" class="inputs"> la radio à la maison. <m id="correctPR9" class="correct"></m></p>
+                    <p>10. Vous <input type="text" name="PR10" placeholder="appeler" id="PR10" class="inputs"> les pompiers? <m id="correctPR10" class="correct"></m></p>
+                </div>
+            </div>
+        </section>
+        <section class="ValiderSec">
+            <script src="control.js" charset="UTF-8"></script>
+            <div id="ValiderButtonDiv">
+                <button class="effect1" onclick="controlPR()" class="ValiderButton">
+                    Valider
+                    <span class="bg"></span>
+                </button>
+            </div>
+            <div style="margin-bottom: 50px;"></div>
+        </section>
+        <section class="oefeningen">
+            <div class="container">
+                <div class="oefeningenDiv">
+                    <p class="Opdracht">Kruis de zinnen die juist vervoegd zijn aan.</p><p id="scoreCPR" class="score">score: 0 / 10</p>
+                    <label><p class="oefeningP">1. <input type="checkbox" class="plus-minus" id="CPR1"> Le professeur viens d'expliquer la nouvelle le&ccedil;on.</label> <m id="correctCPR1"></m><br></p>
+                    <label><p class="oefeningP">2. <input type="checkbox" class="plus-minus" id="CPR2"> Il vient de boire un verre de th&eacute;.</label> <m id="correctCPR2"></m><br></p>
+                    <label><p class="oefeningP">3. <input type="checkbox" class="plus-minus" id="CPR3"> Nous venez de gagner le <abbr title="Weddenschap" class="PCABBR">pari</abbr>.</label> <m id="correctCPR3"></m><br></p>
+                    <label><p class="oefeningP">4. <input type="checkbox" class="plus-minus" id="CPR4"> Je viens de sortir de la salle du sport.</label> <m id="correctCPR4"></m><br></p>
+                    <label><p class="oefeningP">5. <input type="checkbox" class="plus-minus" id="CPR5"> Mes parents viennent de voir ce beau film.</label> <m id="correctCPR5"></m><br></p>
+                </div>
+            </div>  
+        </section>
+        <section class="ValiderSec">
+            <script src="control.js" charset="UTF-8"></script>
+            <div id="ValiderButtonDiv">
+                <button class="effect1" onclick="controlCPR()" class="ValiderButton">
+                    Valider
+                    <span class="bg"></span>
+                </button>
+            </div>
+            <div style="margin-bottom: 15px;"></div>
+        </section>
+        <div class="ToTop">
+			<a href="#">Naar boven</a>
+		</div>
+        <footer>
+            <div class="container">
+                <a href="https://emile-deloof.github.io/" style="text-decoration: underline;">A website by Emile Deloof</a>
+            </div>
+        </footer>
+    </body>
+</html>
