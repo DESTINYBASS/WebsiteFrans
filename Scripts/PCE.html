@@ -65,7 +65,7 @@
                 <div class="Uitleg2">
                     <p>Vul het schema in.</p>
                 </div>  
-                <div class="grid">
+                <div class="grid" id="ipce">
                     <label class="GridLabel GridOpgave" >Je/J'</label>
                     <label class="GridLabel"><input type="text" class="inputs2" id="IPCE1" placeholder="partir"></label>
                     <label class="GridLabel GridOpgave GridOpgave2">Tu</label>
@@ -84,7 +84,8 @@
         <section class="ValiderSec">
             <script src="control.js" charset="UTF-8"></script>
             <div id="ValiderButtonDiv">
-                <button class="effect1" onclick="controlIPCE()" class="ValiderButton">
+                <!-- <button class="effect1" onclick="controlIPCE()" class="ValiderButton"> -->
+                <button class="effect1 ValiderButton" onclick="check('ipce')">
                     Valider
                     <span class="bg"></span>
                 </button>
@@ -93,7 +94,7 @@
         </section>
         <section class="oefeningen">
             <div class="container">
-                <div class="oefeningenDiv">
+                <div class="oefeningenDiv" id="pce">
                     <p class="Opdracht">Vul in met de juiste vorm.</p>
                     <p>1. Hier, h&eacute;l&egrave;ne et sa m&egrave;re <input type="text" name="PCE1" placeholder="ne pas aller" id="PCE1" class="inputs"> au march&eacute;. <m id="correctPCE1" class="correct"></m></p>
                     <p>2. La semaine derni&egrave;re, Pierre <input type="text" name="PCE2" placeholder="tomber" id="PCE2" class="inputs"> de son v&eacute;lo. <m id="correctPCE2" class="correct"></m></p>
@@ -110,7 +111,8 @@
         <section>
             <script src="control.js" charset="UTF-8"></script>
             <div id="ValiderButtonDiv">
-                <button class="effect1" onclick="controlPCE()" class="ValiderButton">
+                <!-- <button class="effect1" onclick="controlPCE()" class="ValiderButton"> -->
+                <button class="effect1" onclick="check('pce')" class="ValiderButton">
                     Valider
                     <span class="bg"></span>
                 </button>
@@ -118,7 +120,7 @@
         </section>
         <section class="oefeningen">
             <div class="container">
-                <div class="oefeningenDiv">
+                <div class="oefeningenDiv" id="tpce">
                     <p class="Opdracht">Vertaal en vervoeg de werkwoorden correct.</p>
                     <p>1. Il <input type="text" name="TPCE1" placeholder="vertrekken" id="TPCE1" class="inputs"> &agrave; 5 heures du matin. <m class="correct" id="correctTPCE1"></m></p>
                     <p>2. Anne et sa soeur <input type="text" name="TPCE2" placeholder="komen" id="TPCE2" class="inputs"> nous voir mardi dernier. <m class="correct" id="correctTPCE2"></m></p>
@@ -131,7 +133,8 @@
         <section>
             <script src="control.js" charset="UTF-8"></script>
             <div id="ValiderButtonDiv">
-                <button class="effect1" onclick="controlTPCE()" class="ValiderButton">
+                <!-- <button class="effect1" onclick="controlTPCE()" class="ValiderButton"> -->
+                <button class="effect1" onclick="check(tpce)" class="ValiderButton">
                     Valider
                     <span class="bg"></span>
                 </button>

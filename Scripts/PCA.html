@@ -45,7 +45,7 @@
                 <div class="Uitleg2">
                     <p>Vul het schema in.</p>
                 </div>  
-                <div class="grid">
+                <div class="grid" id="ipca">
                     <label class="GridLabel GridOpgave" >Je/J'</label>
                     <label class="GridLabel"><input type="text" class="inputs2" id="IPCA1" placeholder="boire"></label>
                     <label class="GridLabel GridOpgave GridOpgave2">Tu</label>
@@ -64,7 +64,8 @@
         <section class="ValiderSec">
             <script src="control.js" charset="UTF-8"></script>
             <div id="ValiderButtonDiv">
-                <button class="effect1" onclick="controlIPCA()" class="ValiderButton">
+                <!-- <button class="effect1" onclick="controlIPCA()" class="ValiderButton"> -->
+                <button class="effect1" onclick="check('ipca')" class="ValiderButton">
                     Valider
                     <span class="bg"></span>
                 </button>
@@ -73,7 +74,7 @@
         </section>
         <section class="oefeningen">
             <div class="container">
-                <div class="oefeningenDiv">
+                <div class="oefeningenDiv" id="pca">
                     <p class="Opdracht">Vul in met de juiste vorm.</p>
                     <p>1. J'<input type="text" name="PCA1" placeholder="d&eacute;j&agrave; manger" id="PCA1" class="inputs">. <m id="correctPCA1" class="correct"></m></p>
                     <p>2. Ces hommes <input type="text" name="PCA2" placeholder="boire" id="PCA2" class="inputs"> trop de wodka. <m id="correctPCA2" class="correct"></m></p>
@@ -92,7 +93,8 @@
             <div class="container">
                 <script src="control.js" charset="UTF-8"></script>
                 <div id="ValiderButtonDiv">
-                    <button class="effect1" onclick="controlPCA()" class="ValiderButton">
+                    <!-- <button class="effect1" onclick="controlPCA()" class="ValiderButton"> -->
+                    <button class="effect1" onclick="check('pca')" class="ValiderButton">
                         Valider
                         <span class="bg"></span>
                     </button>
@@ -101,7 +103,7 @@
         </section>
         <section class="oefeningen">
             <div class="container">
-                <div class="oefeningenDiv">
+                <div class="oefeningenDiv" id="spca">
                     <p class="Opdracht">Selecteer de juiste vorm.</p>
                     <p>1. J' <select id="UiDropdown1" class="UiDropdown">
                         <option value="1">ai suis</option>
@@ -131,6 +133,7 @@
                 <script src="control.js" charset="UTF-8"></script>
                 <div id="ValiderButtonDiv">
                     <button class="effect1" onclick="controlSPCA()" class="ValiderButton">
+                    <!-- <button class="effect1" onclick="chekck('spca')" class="ValiderButton"> -->
                         Valider
                         <span class="bg"></span>
                     </button>

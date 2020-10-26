@@ -40,40 +40,37 @@
                 <iframe class="video" src="https://www.youtube.com/embed/i4lpym274kk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </section>
         <section class="inleiding">
-            <div class="container">
-                <div class="Uitleg2">
-                    <p>Vul het schema in.</p>
-                </div>  
-                <div class="grid" id="IPR">
-                    <label class="GridLabel GridOpgave" >Je/J'</label>
-                    <label class="GridLabel"><input type="text" class="inputs2" id="IPR1" placeholder="partir"></label>
-                    <label class="GridLabel GridOpgave GridOpgave2">Tu</label>
-                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR2" placeholder="avoir"></label>
-                    <label class="GridLabel GridOpgave GridOpgave2">Il/Elle/On</label>
-                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR3" placeholder="arriver"></label>
-                    <label class="GridLabel GridOpgave GridOpgave2">Nous</label>
-                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR4" placeholder="d&eacute;coller"></label>
-                    <label class="GridLabel GridOpgave GridOpgave2">Vous</label>
-                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR5" placeholder="tenir"></label>
-                    <label class="GridLabel GridOpgave GridOpgave2">Ils/Elles</label>
-                    <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR6" placeholder="parler"></label>
+                <div class="container">
+                    <div class="Uitleg2">
+                        <p>Vul het schema in.</p>
+                    </div>  
+                    <div class="grid" id="ipr">
+                        <label class="GridLabel GridOpgave" >Je/J'</label>
+                        <label class="GridLabel"><input type="text" class="inputs2" id="IPR1" placeholder="partir"></label>
+                        <label class="GridLabel GridOpgave GridOpgave2">Tu</label>
+                        <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR2" placeholder="avoir"></label>
+                        <label class="GridLabel GridOpgave GridOpgave2">Il/Elle/On</label>
+                        <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR3" placeholder="arriver"></label>
+                        <label class="GridLabel GridOpgave GridOpgave2">Nous</label>
+                        <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR4" placeholder="d&eacute;coller"></label>
+                        <label class="GridLabel GridOpgave GridOpgave2">Vous</label>
+                        <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR5" placeholder="tenir"></label>
+                        <label class="GridLabel GridOpgave GridOpgave2">Ils/Elles</label>
+                        <label class="GridLabel GridOpgave2"><input type="text" class="inputs2" id="IPR6" placeholder="parler"></label>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="ValiderSec">
-            <script src="control.js"></script>
-            <div id="ValiderButtonDiv">
-                <!-- <button class="effect1" onclick="controlIPR()" class="ValiderButton"> -->
-                <button class="effect1" onclick="check()" class="ValiderButton">
-                    Valider
-                    <span class="bg"></span>
-                </button>
-            </div>
-            <div style="margin-bottom: 50px;"></div>
+                <div id="ValiderButtonDiv">
+                    <!-- <button class="effect1" onclick="controlIPR()" class="ValiderButton"> -->
+                    <button class="effect1" onclick="check('ipr')" class="ValiderButton">
+                        Valider
+                        <span class="bg"></span>
+                    </button>
+                </div>
+                <div style="margin-bottom: 50px;"></div>
         </section>
         <section class="oefeningen">
             <div class="container">
-                <div class="oefeningenDiv">
+                <div class="oefeningenDiv" id="pr">
                     <p class="Opdracht">Vul in met de juiste vorm.</p>
                     <p>1. Je <input type="text" name="PR1" placeholder="manger" id="PR1" class="inputs"> des frites. <m id="correctPR1" class="correct"></m></p>
                     <p>2. Nous <input type="text" name="PR2" placeholder="prendre" id="PR2" class="inputs"> notre petit d&eacute;jeuner avec nos parents. <m id="correctPR2" class="correct"></m></p>
@@ -89,9 +86,8 @@
             </div>
         </section>
         <section class="ValiderSec">
-            <script src="control.js" charset="UTF-8"></script>
             <div id="ValiderButtonDiv">
-                <button class="effect1" onclick="controlPR()" class="ValiderButton">
+                <button class="effect1" onclick="check('pr')" class="ValiderButton">
                     Valider
                     <span class="bg"></span>
                 </button>
@@ -100,7 +96,7 @@
         </section>
         <section class="oefeningen">
             <div class="container">
-                <div class="oefeningenDiv">
+                <div class="oefeningenDiv" id="cpr">
                     <p class="Opdracht">Kruis de zinnen die juist vervoegd zijn aan.</p><p id="scoreCPR" class="score">score: 0 / 10</p>
                     <label><p class="oefeningP">1. <input type="checkbox" class="plus-minus" id="CPR1"> Le professeur viens d'expliquer la nouvelle le&ccedil;on.</label> <m id="correctCPR1"></m><br></p>
                     <label><p class="oefeningP">2. <input type="checkbox" class="plus-minus" id="CPR2"> Il vient de boire un verre de th&eacute;.</label> <m id="correctCPR2"></m><br></p>
@@ -114,6 +110,7 @@
             <script src="control.js" charset="UTF-8"></script>
             <div id="ValiderButtonDiv">
                 <button class="effect1" onclick="controlCPR()" class="ValiderButton">
+                <!-- <button class="effect1" onclick="check('cpr', '#CPR')" class="ValiderButton"> -->
                     Valider
                     <span class="bg"></span>
                 </button>

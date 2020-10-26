@@ -37,7 +37,7 @@
             </div>
         </section>
         <section class="oefeningen">
-            <div class="container">
+            <div class="container" id="pcf">
                 <p class="Opdracht">Vul in met de juiste vormen.</p>
                 <p>1. Est-ce que vous <input type="text" name="PCF1" placeholder="aller" id="PCF1" class="inputs"> au restaurant? <m id="correctPCF1" class="Correct"></m></p>
                 <p>2. Michel <input type="text" name="PCF2" placeholder="finir" id="PCF2" class="inputs"> son dessert. <m id="correctPCF2" class="Correct"></m></p>  
@@ -54,7 +54,8 @@
         <section class="ValiderButtonSec">
             <script src="control.js" charset="UTF-8"></script>
             <div id="ValiderButtonDiv">
-                <button class="effect1" onclick="controlPCF()" class="ValiderButton">
+                <!-- <button class="effect1" onclick="controlPCF()" class="ValiderButton"> -->
+                <button class="effect1" onclick="check('pcf')" class="ValiderButton">
                     Valider
                     <span class="bg"></span>
                 </button>
@@ -62,7 +63,7 @@
         </section>
         <section class="oefeningen">
             <div class="container">
-                <div class="oefeningenDiv">
+                <div class="oefeningenDiv" id="cpcf">
                     <p class="Opdracht">Kruis de zinnen die juist vervoegd zijn aan.</p>
                     <label><p class="oefeningP">1. <input type="checkbox" class="Checkboxes" id="CPCF1"> Mon fr&egrave;re est all&eacute; chez le denstiste.</label> <m id="correctCPCF1"></m><br></p>
                     <label><p class="oefeningP">2. <input type="checkbox" class="Checkboxes" id="CPCF2"> J'ai oublier mon parapluie dans le taxi ce matin.</label> <m id="correctCPCF2"></m><br></p>
@@ -84,7 +85,7 @@
         </section>
         <section class="oefeningen">
             <div class="container">
-                <div class="oefeningenDiv">
+                <div class="oefeningenDiv" id="spcf">
                     <p class="Opdracht">Selecteer de juiste vorm.</p>
                     <p>1. Elle <select id="UiDropdown1" class="UiDropdown">
                         <option value="1">a mang&eacute;</option>
