@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="../Style/validerButton.css">
     </head>
     <body>
-        <script src="/Scripts/controlv2.js"></script>
+        <script src="./controlv2.js"></script>
         <section class="Navbar">
 			<nav class="MainNav">
 				<ul class="NavUl1">
@@ -105,26 +105,31 @@
             <div class="container">
                 <div class="oefeningenDiv" id="spca">
                     <p class="Opdracht">Selecteer de juiste vorm.</p>
-                    <p>1. J' <select id="UiDropdown1" class="UiDropdown">
+                    <p>1. J' <select class="UiDropdown">
+                        <option value="0"> </option>
                         <option value="1">ai suis</option>
                         <option value="2">ai &eacute;t&eacute;</option>
-                    </select> en forme toute la matin&eacute;e. <m id="correctSPCA1" class="correct"></m></p>
-                    <p>2. Elle <select id="UiDropdown2" class="UiDropdown">
+                    </select> en forme toute la matin&eacute;e. <label></label></p>
+                    <p>2. Elle <select class="UiDropdown">
+                        <option value="0"> </option>
                         <option value="1">a entendu</option>
                         <option value="2">as entendu</option>
-                    </select> ce bruit. <m id="correctSPCA2" class="correct"></m></p>
-                    <p>3. Nous <select id="UiDropdown3" class="UiDropdown">
+                    </select> ce bruit. <label></label></p>
+                    <p>3. Nous <select class="UiDropdown">
+                        <option value="0"> </option>
                         <option value="1">avons aimez</option>
                         <option value="2">avons aim&eacute;</option>
-                    </select> le film de hier. <m id="correctSPCA3" class="correct"></m></p>
-                    <p>4. Le m&eacute;decin me dit que j' <select id="UiDropdown4" class="UiDropdown">
+                    </select> le film de hier. <label></label></p>
+                    <p>4. Le m&eacute;decin me dit que j' <select class="UiDropdown">
+                        <option value="0"> </option>
                         <option value="1">ai grandi</option>
                         <option value="2">ai grandis</option>
-                    </select> de 2 centim&egrave;tres. <m id="correctSPCA4" class="correct"></m></p>
-                    <p>5. Vous &ecirc;tes pr&ecirc;ts pour votre examen, vous <select id="UiDropdown5" class="UiDropdown">
+                    </select> de 2 centim&egrave;tres. <label></label></p>
+                    <p>5. Vous &ecirc;tes pr&ecirc;ts pour votre examen, vous <select class="UiDropdown">
+                        <option value="0"> </option>
                         <option value="1">avez r&eacute;visez</option>
                         <option value="2">avez r&eacute;vis&eacute;</option>
-                    </select> votre examen. <m id="correctSPCA5" class="correct"></m></p>
+                    </select> votre examen. <label></label></p>
                 </div>
             </div>
         </section>
@@ -132,8 +137,8 @@
             <div class="container">
                 <script src="control.js" charset="UTF-8"></script>
                 <div id="ValiderButtonDiv">
-                    <button class="effect1" onclick="controlSPCA()" class="ValiderButton">
-                    <!-- <button class="effect1" onclick="chekck('spca')" class="ValiderButton"> -->
+                    <!-- <button class="effect1" onclick="controlSPCA()" class="ValiderButton"> -->
+                    <button class="effect1" onclick="check('spca')" class="ValiderButton">
                         Valider
                         <span class="bg"></span>
                     </button>

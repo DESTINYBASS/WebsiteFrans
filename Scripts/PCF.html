@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="../Style/validerButton.css">
     </head>
     <body>
-        <script src="/Scripts/controlv2.js"></script>
+        <script src="./controlv2.js"></script>
         <section class="Navbar">
 			<nav class="MainNav">
 				<ul class="NavUl1">
@@ -65,18 +65,19 @@
             <div class="container">
                 <div class="oefeningenDiv" id="cpcf">
                     <p class="Opdracht">Kruis de zinnen die juist vervoegd zijn aan.</p>
-                    <label><p class="oefeningP">1. <input type="checkbox" class="Checkboxes" id="CPCF1"> Mon fr&egrave;re est all&eacute; chez le denstiste.</label> <m id="correctCPCF1"></m><br></p>
-                    <label><p class="oefeningP">2. <input type="checkbox" class="Checkboxes" id="CPCF2"> J'ai oublier mon parapluie dans le taxi ce matin.</label> <m id="correctCPCF2"></m><br></p>
-                    <label><p class="oefeningP">3. <input type="checkbox" class="Checkboxes" id="CPCF3"> La neige a fondu tr&egrave;s vite, c'est dommage.</label> <m id="correctCPCF3"></m><br></p>
-                    <label><p class="oefeningP">4. <input type="checkbox" class="Checkboxes" id="CPCF4"> Tu as sais me rendre <abbr title="Hoop" class="PCABBR">l'espoir</abbr> quand j'en avais besoin, je te remercie.</label> <m id="correctCPCF4"></m><br></p>
-                    <label><p class="oefeningP">5. <input type="checkbox" class="Checkboxes" id="CPCF5"> Paul et moi sont arriv&eacute;s avec une hearde de retard au rendez-vous.</label> <m id="correctCPCF5"></m><br></p>
+                    <p class="oefeningP">1. <input type="checkbox" class="Checkboxes" id="CPCF1"> Mon fr&egrave;re est all&eacute; chez le denstiste. <label></label></p>
+                    <p class="oefeningP">2. <input type="checkbox" class="Checkboxes" id="CPCF2"> J'ai oublier mon parapluie dans le taxi ce matin. <label></label></p>
+                    <p class="oefeningP">3. <input type="checkbox" class="Checkboxes" id="CPCF3"> La neige a fondu tr&egrave;s vite, c'est dommage. <label></label></p>
+                    <p class="oefeningP">4. <input type="checkbox" class="Checkboxes" id="CPCF4"> Tu as sais me rendre <abbr title="Hoop" class="PCABBR">l'espoir</abbr> quand j'en avais besoin, je te remercie. <label></label></p>
+                    <p class="oefeningP">5. <input type="checkbox" class="Checkboxes" id="CPCF5"> Paul et moi sont arriv&eacute;s avec une hearde de retard au rendez-vous. <label></label></p>
                 </div>
             </div>  
         </section>
         <section class="ValiderSec">
             <script src="control.js" charset="UTF-8"></script>
             <div id="ValiderButtonDiv">
-                <button class="effect1" onclick="controlCPCF()" class="ValiderButton">
+                <!-- <button class="effect1" onclick="controlCPCF()" class="ValiderButton"> -->
+                <button class="effect1" onclick="check('cpcf')" class="ValiderButton">    
                     Valider
                     <span class="bg"></span>
                 </button>
@@ -87,26 +88,31 @@
             <div class="container">
                 <div class="oefeningenDiv" id="spcf">
                     <p class="Opdracht">Selecteer de juiste vorm.</p>
-                    <p>1. Elle <select id="UiDropdown1" class="UiDropdown">
+                    <p>1. Elle <select class="UiDropdown">
+                        <option value="0"> </option>
                         <option value="1">a mang&eacute;</option>
                         <option value="2">a mang&eacute;e</option>
-                    </select> un g&acirc;teau. <m id="correctSPCF1" class="correct"></m></p>
-                    <p>2. Nous <select id="UiDropdown2" class="UiDropdown">
+                    </select> un g&acirc;teau. <label></label></p>
+                    <p>2. Nous <select class="UiDropdown">
+                        <option value="0"> </option>
                         <option value="1">sommes partis</option>
                         <option value="2">avons parti</option>
-                    </select> en vacances. <m id="correctSPCF2" class="correct"></m></p>
-                    <p>3. Est-ce que vous <select id="UiDropdown3" class="UiDropdown">
+                    </select> en vacances. <label></label></p>
+                    <p>3. Est-ce que vous <select class="UiDropdown">
+                        <option value="0"> </option>
                         <option value="1">&ecirc;tes re&ccedil;u</option>
                         <option value="2">avez re&ccedil;u</option>
-                    </select> au restaurant? <m id="correctSPCF3" class="correct"></m></p>
-                    <p>4. Ils <select id="UiDropdown4" class="UiDropdown">
+                    </select> au restaurant? <label></label></p>
+                    <p>4. Ils <select class="UiDropdown">
+                        <option value="0"> </option>
                         <option value="1">ont &eacute;crir&eacute;</option>
                         <option value="2">ont &eacute;crit</option>
-                    </select> trop de wodka. <m id="correctSPCF4" class="correct"></m></p>
-                    <p>5. Ma m&egrave;re et mon p&egrave;re <select id="UiDropdown5" class="UiDropdown">
+                    </select> trop de wodka. <label></label></p>
+                    <p>5. Ma m&egrave;re et mon p&egrave;re <select class="UiDropdown">
+                        <option value="0"> </option>
                         <option value="1">sont venus</option>
                         <option value="2">ont venus</option>
-                    </select> &agrave; la f&ecirc;te de l'&eacute;cole. <m id="correctSPCF5" class="correct"></m></p>
+                    </select> &agrave; la f&ecirc;te de l'&eacute;cole. <label></label></p>
                 </div>
             </div>
         </section>
@@ -114,7 +120,8 @@
             <div class="container">
                 <script src="control.js" charset="UTF-8"></script>
                 <div id="ValiderButtonDiv">
-                    <button class="effect1" onclick="controlSPCF()" class="ValiderButton">
+                    <!-- <button class="effect1" onclick="controlSPCF()" class="ValiderButton"> -->
+                    <button class="effect1" onclick="check('spcf')" class="ValiderButton">
                         Valider
                         <span class="bg"></span>
                     </button>

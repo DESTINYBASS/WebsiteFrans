@@ -119,6 +119,8 @@ var cpr = {
 
 function check(oef){
     var inputs = document.querySelectorAll(`#${oef} input`);
+    var labels = document.querySelectorAll(`#${oef} label`);
+    var select = document.querySelectorAll(`#${oef} select`);
     switch(oef){
         case "ipr":
             for(i in ipr){
@@ -190,26 +192,18 @@ function check(oef){
                 }
             }
             break;
-        // case "spca":
-        //     for(i in spca){
-        //         if(inputs[i-1].value == spca[i]){
-        //             inputs[i-1].style.borderColor = "green"
-        //         }
-        //         else{
-        //             inputs[i-1].style.borderColor = "#9E1A1A"
-        //         }
-        //     }
-        //     break;
-        // case "spcf":
-        //     for(i in spcf){
-        //         if(inputs[i-1].value == spcf[i]){
-        //             inputs[i-1].style.borderColor = "green"
-        //         }
-        //         else{
-        //             inputs[i-1].style.borderColor = "#9E1A1A"
-        //         }
-        //     }
-        //     break;
+        case "cpr":
+            for(i in cpr){
+                if(inputs[i-1].checked == cpr[i]){
+                    labels[i-1].innerText = "correct";
+                    labels[i-1].style.color = "green";
+                }
+                else{
+                    labels[i-1].innerText = "Probeer opnieuw.";
+                    labels[i-1].style.color = "#9E1A1A";
+                }
+            }
+            break;
         case "tpce":
             for(i in tpce){
                 if(inputs[i-1].value == tpce[i]){
@@ -220,5 +214,40 @@ function check(oef){
                 }
             }
             break;
+        case "cpcf":
+            for(i in cpcf){
+                if(inputs[i-1].checked == cpcf[i]){
+                    labels[i-1].innerText = "correct";
+                    labels[i-1].style.color = "green";
+                }
+                else{
+                    labels[i-1].innerText = "Probeer opnieuw.";
+                    labels[i-1].style.color = "#9E1A1A";
+                }
+            }
+            break;
+        case "spcf":
+            for(i in spcf){
+                if(select[i-1].value == spcf[i]){
+                    labels[i-1].innerText = "correct";
+                    labels[i-1].style.color = "green";
+                }
+                else{
+                    labels[i-1].innerText = "Probeer opnieuw.";
+                    labels[i-1].style.color = "#9E1A1A";
+                }
+            }
+            break;
+        case "spca":
+            for(i in spca){
+                if(select[i-1].value == spca[i]){
+                    labels[i-1].innerText = "correct";
+                    labels[i-1].style.color = "green";
+                }
+                else{
+                    labels[i-1].innerText = "Probeer opnieuw.";
+                    labels[i-1].style.color = "#9E1A1A";
+                }
+            }
     }
 }

@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="../Style/validerButton.css">
     </head>
     <body>
-        <script src="/Scripts/controlv2.js"></script>
+        <script src="./controlv2.js"></script>
         <section class="Navbar">
 			<nav class="MainNav">
 				<ul class="NavUl1">
@@ -98,19 +98,19 @@
             <div class="container">
                 <div class="oefeningenDiv" id="cpr">
                     <p class="Opdracht">Kruis de zinnen die juist vervoegd zijn aan.</p><p id="scoreCPR" class="score">score: 0 / 10</p>
-                    <label><p class="oefeningP">1. <input type="checkbox" class="plus-minus" id="CPR1"> Le professeur viens d'expliquer la nouvelle le&ccedil;on.</label> <m id="correctCPR1"></m><br></p>
-                    <label><p class="oefeningP">2. <input type="checkbox" class="plus-minus" id="CPR2"> Il vient de boire un verre de th&eacute;.</label> <m id="correctCPR2"></m><br></p>
-                    <label><p class="oefeningP">3. <input type="checkbox" class="plus-minus" id="CPR3"> Nous venez de gagner le <abbr title="Weddenschap" class="PCABBR">pari</abbr>.</label> <m id="correctCPR3"></m><br></p>
-                    <label><p class="oefeningP">4. <input type="checkbox" class="plus-minus" id="CPR4"> Je viens de sortir de la salle du sport.</label> <m id="correctCPR4"></m><br></p>
-                    <label><p class="oefeningP">5. <input type="checkbox" class="plus-minus" id="CPR5"> Mes parents viennent de voir ce beau film.</label> <m id="correctCPR5"></m><br></p>
+                    <p class="oefeningP">1. <input type="checkbox" class="plus-minus" id="CPR1"> Le professeur viens d'expliquer la nouvelle le&ccedil;on. <label></label></p>
+                    <p class="oefeningP">2. <input type="checkbox" class="plus-minus" id="CPR2"> Il vient de boire un verre de th&eacute;. <label></label></p>
+                    <p class="oefeningP">3. <input type="checkbox" class="plus-minus" id="CPR3"> Nous venez de gagner le <abbr title="Weddenschap" class="PCABBR">pari</abbr>. <label></label></p>
+                    <p class="oefeningP">4. <input type="checkbox" class="plus-minus" id="CPR4"> Je viens de sortir de la salle du sport. <label></label></p>
+                    <p class="oefeningP">5. <input type="checkbox" class="plus-minus" id="CPR5"> Mes parents viennent de voir ce beau film. <label></label></p>
                 </div>
             </div>  
         </section>
         <section class="ValiderSec">
             <script src="control.js" charset="UTF-8"></script>
             <div id="ValiderButtonDiv">
-                <button class="effect1" onclick="controlCPR()" class="ValiderButton">
-                <!-- <button class="effect1" onclick="check('cpr', '#CPR')" class="ValiderButton"> -->
+                <!-- <button class="effect1" onclick="controlCPR()" class="ValiderButton"> -->
+                <button class="effect1" onclick="check('cpr')" class="ValiderButton">
                     Valider
                     <span class="bg"></span>
                 </button>

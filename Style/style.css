@@ -35,20 +35,9 @@ body a{
     text-align: justify;
     padding-top: 2%;
     padding-bottom: 3%;
-    /*opacity: 0;*/
-    /*animation: welcomelanding 0.5s both;*/
     position: relative;
     z-index: 0;
 }
-
-/*@keyframes welcomelanding{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 0.5;
-    }
-}*/
 
 .NavButtons{
     text-align: center;
