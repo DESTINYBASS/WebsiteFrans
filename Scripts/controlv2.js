@@ -117,137 +117,63 @@ var cpr = {
     "5": true
 }
 
-function check(oef){
-    var inputs = document.querySelectorAll(`#${oef} input`);
-    var labels = document.querySelectorAll(`#${oef} label`);
-    var select = document.querySelectorAll(`#${oef} select`);
-    switch(oef){
-        case "ipr":
-            for(i in ipr){
-                if(inputs[i-1].value == ipr[i]){
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+let tries = 3
+
+async function check(oef){
+    let inputs = document.querySelectorAll(`#${oef} input`);
+    let labels = document.querySelectorAll(`#${oef} label`);
+    let select = document.querySelectorAll(`#${oef} select`);
+    let scoreLabels = document.getElementById(`${oef}Score`);
+    let triesLabels = document.getElementById(`${oef}Tries`);
+    let score = 0
+    let invuloef = ["ipr", "pr","ipca","pca","ipce","pce","tpce", "pcf"]
+    let checkoef = ["cpcf", "cpr"]
+    if(tries > 0){
+        if(invuloef.includes(oef)){
+            for(i in eval(`${oef}`)){
+                if(inputs[i-1].value == eval(`${oef}`)[i]){
                     inputs[i-1].style.borderColor = "green"
+                    score = score + 1
                 }
                 else{
                     inputs[i-1].style.borderColor = "#9E1A1A"
                 }
             }
-            break;
-        case "ipca":
-            for(i in ipca){
-                if(inputs[i-1].value == ipca[i]){
-                    inputs[i-1].style.borderColor = "green"
-                }
-                else{
-                    inputs[i-1].style.borderColor = "#9E1A1A"
-                }
-            }
-            break;
-        case "ipce":
-            for(i in ipce){
-                if(inputs[i-1].value == ipce[i]){
-                    inputs[i-1].style.borderColor = "green"
-                }
-                else{
-                    inputs[i-1].style.borderColor = "#9E1A1A"
-                }
-            }
-            break;
-        case "pr":
-            for(i in pr){
-                if(inputs[i-1].value == pr[i]){
-                    inputs[i-1].style.borderColor = "green"
-                }
-                else{
-                    inputs[i-1].style.borderColor = "#9E1A1A"
-                }
-            }
-            break;
-        case "pca":
-            for(i in pca){
-                if(inputs[i-1].value == pca[i]){
-                    inputs[i-1].style.borderColor = "green"
-                }
-                else{
-                    inputs[i-1].style.borderColor = "#9E1A1A"
-                }
-            }
-            break;
-        case "pce":
-            for(i in pce){
-                if(inputs[i-1].value == pce[i]){
-                    inputs[i-1].style.borderColor = "green"
-                }
-                else{
-                    inputs[i-1].style.borderColor = "#9E1A1A"
-                }
-            }
-            break;
-        case "pcf":
-            for(i in pcf){
-                if(inputs[i-1].value == pcf[i]){
-                    inputs[i-1].style.borderColor = "green"
-                }
-                else{
-                    inputs[i-1].style.borderColor = "#9E1A1A"
-                }
-            }
-            break;
-        case "cpr":
-            for(i in cpr){
-                if(inputs[i-1].checked == cpr[i]){
-                    labels[i-1].innerText = "correct";
-                    labels[i-1].style.color = "green";
-                }
-                else{
-                    labels[i-1].innerText = "Probeer opnieuw.";
-                    labels[i-1].style.color = "#9E1A1A";
-                }
-            }
-            break;
-        case "tpce":
-            for(i in tpce){
-                if(inputs[i-1].value == tpce[i]){
-                    inputs[i-1].style.borderColor = "green"
-                }
-                else{
-                    inputs[i-1].style.borderColor = "#9E1A1A"
-                }
-            }
-            break;
-        case "cpcf":
-            for(i in cpcf){
+            scoreLabels.innerText = `score: ${score}/6`
+            triesLabels.innerText = `kansen resterend: ${tries = tries - 1}/3`
+        } else if(checkoef.includes(oef)){
+            for(i in eval(`${oef}`)){
                 if(inputs[i-1].checked == cpcf[i]){
                     labels[i-1].innerText = "correct";
                     labels[i-1].style.color = "green";
-                }
-                else{
+                } else{
                     labels[i-1].innerText = "Probeer opnieuw.";
                     labels[i-1].style.color = "#9E1A1A";
                 }
             }
-            break;
-        case "spcf":
-            for(i in spcf){
-                if(select[i-1].value == spcf[i]){
+        } else{
+            for(i in eval(`${oef}`)){
+                if(select[i-1].value == eval(`${oef}`)[i]){
                     labels[i-1].innerText = "correct";
                     labels[i-1].style.color = "green";
-                }
-                else{
+                } else{
                     labels[i-1].innerText = "Probeer opnieuw.";
                     labels[i-1].style.color = "#9E1A1A";
                 }
             }
-            break;
-        case "spca":
-            for(i in spca){
-                if(select[i-1].value == spca[i]){
-                    labels[i-1].innerText = "correct";
-                    labels[i-1].style.color = "green";
-                }
-                else{
-                    labels[i-1].innerText = "Probeer opnieuw.";
-                    labels[i-1].style.color = "#9E1A1A";
-                }
-            }
+        }
+    }
+    else{
+        var error = document.createElement("div");
+        error.classList.add("errorDiv")
+        error.innerText = "Je kansen om deze oefening te maken zijn op."
+        document.querySelector("body").appendChild(error);
+        error.style.display = "block"
+        await sleep(2000)
+        error.style.display = "none"
     }
 }

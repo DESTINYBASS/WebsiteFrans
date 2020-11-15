@@ -32,6 +32,7 @@
             <div class="container">
                 <p>Welkom bij de eerste oefening! Voor je gaat beginnen met de 
                     oefeningen zou je misschien beter eerst de video hieronder bekijken om Le Pass&eacute; R&eacute;cent te hernemen en te herhalen als je denkt het te begrijpen kun je beginnen met de oefeningen.
+                    Je hebt voor elke oefening 3 kansen om het juist te hebben. Als je het dan nog niet juist hebt worden de antwoorden getoond, dus het is zeker de bedoeling dat je goed nadenkt over de oefeningen.
                 </p>
             </div>
         </section>
@@ -40,11 +41,13 @@
                 <iframe class="video" src="https://www.youtube.com/embed/i4lpym274kk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </section>
         <section class="inleiding">
-                <div class="container">
+                <div class="container" id="iprContainer">
                     <div class="Uitleg2">
                         <p>Vul het schema in.</p>
                     </div>  
                     <div class="grid" id="ipr">
+                        <label id="iprScore" class="scoreLabels"></label>
+                        <label id="iprTries"></label>
                         <label class="GridLabel GridOpgave" >Je/J'</label>
                         <label class="GridLabel"><input type="text" class="inputs2" id="IPR1" placeholder="partir"></label>
                         <label class="GridLabel GridOpgave GridOpgave2">Tu</label>
@@ -60,7 +63,6 @@
                     </div>
                 </div>
                 <div id="ValiderButtonDiv">
-                    <!-- <button class="effect1" onclick="controlIPR()" class="ValiderButton"> -->
                     <button class="effect1" onclick="check('ipr')" class="ValiderButton">
                         Valider
                         <span class="bg"></span>
@@ -119,7 +121,7 @@
         </section>
         <div class="ToTop">
 			<a href="#">Naar boven</a>
-		</div>
+        </div>
         <footer>
             <div class="container">
                 <a href="https://emile-deloof.github.io/" style="text-decoration: underline;">A website by Emile Deloof</a>

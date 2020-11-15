@@ -456,3 +456,17 @@ footer p{
 .score{
     display: none;
 }
+
+.errorDiv{
+    background-color: #BD1D1D;
+    position: fixed;
+    top: 50px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
