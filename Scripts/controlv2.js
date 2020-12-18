@@ -123,7 +123,7 @@ function sleep(ms) {
 
 let tries = 3
 
-async function check(oef){
+function check(oef){
     let inputs = document.querySelectorAll(`#${oef} input`);
     let labels = document.querySelectorAll(`#${oef} label`);
     let select = document.querySelectorAll(`#${oef} select`);
